@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fc;
+  color: #113f67;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #113f67;
+}
+
+img {
+  max-height: 90px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #113f67;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38598b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #113f67;
+  color: white;
+  font-size: 14px;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+}
+
+a {
+  color: #38598b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tooltip-link {
+  position: relative;
+  margin-right: 6px;
+}
+
+.tooltip-link:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #113f67;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
